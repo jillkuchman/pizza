@@ -15,8 +15,8 @@ $(document).ready(function() {
             toppings_multiplier += +this.value;
         });
 
-        // var size_selection = $('#size-selection').val();
-        var size_selection = 0;
+        var size_selection = parseInt($('.size-selection').val());
+        console.log(size_selection);
 
         var pizza_order = Object.create(pizza);
 
