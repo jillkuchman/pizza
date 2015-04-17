@@ -7,14 +7,14 @@ var pizza = {
     }
 };
 
-var toppings_list = []
 
 $(document).ready(function() {
+
     $('#order-form').submit(function(event) {
         event.preventDefault();
 
-        var toppings_multiplier = 0;
         // ADDS CHECKED TOPPINGS TO TOPPINGS MULTIPLIER
+        var toppings_multiplier = 0;
         $(':checkbox:checked.topping-selection').each(function() {
             toppings_multiplier += +this.value;
         });
