@@ -1,10 +1,10 @@
-##Order a Pizza
+##Order A Pizza
 
 ###Developers
 Jill Kuchman
 
 ###Date
-April 17, 2015
+17 April 2015
 
 ###Description
 This app allows the user to order different types of pizza.
@@ -17,6 +17,9 @@ You can use and/or edit this application by:<br />
 *(ex: file:///project-directory/index.html)*
 
 ###Copyright (c) 2015 Jill Kuchman
+
+####License: [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE) 
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
