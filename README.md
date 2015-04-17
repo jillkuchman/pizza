@@ -7,7 +7,7 @@ Jill Kuchman
 April 17, 2015
 
 ###Description
-This app allows the user to order different types of pizza..
+This app allows the user to order different types of pizza.
 
 ###Use and Editing
 You can use and/or edit this application by:<br />
