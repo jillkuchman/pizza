@@ -1,4 +1,4 @@
-var Pizza = {
+var pizza = {
     // getPrice: function() {
     //     if (this.topping === 'cheese') {
     //         return 10;
@@ -9,7 +9,7 @@ var Pizza = {
     // }
     getPrice: function() {
         return 10   + (this.topping * 2)
-                    
+                    + (this.pizza_size * 3)
     }
 };
 
@@ -17,11 +17,20 @@ $(document).ready(function() {
     $('#order-form').submit(function(event) {
         event.preventDefault();
 
-        var topping_selection = $('#topping-selection').val();
+        var toppings_multiplier = 0;
+        // var topping_selection = $('#topping-selection').val();
+        $(':checkbox:checked.topping-selection').each(function() {
+            toppings_multiplier += +this.value;
+            console.log(toppings_multiplier);
+        });
+        console.log('total: ' + toppings_multiplier);
 
-        var pizza_order = Object.create(Pizza);
+        var size_selection = $('#size-selection').val();
 
-        pizza_order.topping = topping_selection;
+        var pizza_order = Object.create(pizza);
+
+        pizza_order.topping = toppings_multiplier;
+        pizza_order.size_selection = size_selection;
 
         var pizza_price = pizza_order.getPrice();
 
