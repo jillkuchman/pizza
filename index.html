@@ -10,7 +10,6 @@
         <script src='js/scripts.js'></script>
 
         <!-- TITLE -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/pizza_icon.png">
         <title>IT'S PIZZA TIME!</title>
 
     </head>
@@ -24,16 +23,12 @@
             <div id='pizza-order' class='col-sm-6'>
                 <div class='form-group>'>
                     <form id='order-form'>
-                        <!-- <select class='topping-selection'>
-                            <option value=0>Cheese</option>
-                            <option value=1>Pepperoni</option>
-                            <option value=1>Hawaiian</option>
-                        </select> -->
+
                         <p>Which toppings would you like?</p>
-                        <input type='checkbox' name='topping' class='topping-selection' value=0> Cheese <br>
                         <input type='checkbox' name='topping' class='topping-selection' value=1> Pepperoni <br>
                         <input type='checkbox' name='topping' class='topping-selection' value=2> Salami <br>
                         <input type='checkbox' name='topping' class='topping-selection' value=2> Pineapple <br>
+                        <input type='checkbox' name='topping' class='topping-selection' value=-1> No Cheese <br>
 
                         <br>
                         <p>Which size pizza?</p>
@@ -53,8 +48,8 @@
                             <option value=3>Gluten-Free</option>
                         </select>
 
-
-                        <button type='submit' class='btn btn-default'>Order</button>
+                        <br><br>
+                        <button type='submit' class='btn btn-info'>Order</button>
                     </form>
                 </div>
             </div>
