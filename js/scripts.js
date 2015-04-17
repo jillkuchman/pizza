@@ -7,13 +7,13 @@ var Pizza = {
             return 15;
         }
     }
-}
+};
 
 $(document).ready(function() {
-    $('#topping-selection').submit(function(event) {
+    $('#order-form').submit(function(event) {
         event.preventDefault();
 
-        var topping_selection = $('#topping-input').val();
+        var topping_selection = $('#topping-selection').val();
 
         var pizza_order = Object.create(Pizza);
 
