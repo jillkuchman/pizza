@@ -7,6 +7,8 @@ var pizza = {
     }
 };
 
+var toppings_list = []
+
 $(document).ready(function() {
     $('#order-form').submit(function(event) {
         event.preventDefault();
@@ -34,5 +36,10 @@ $(document).ready(function() {
         $('#pizza-price').show();
 
         $('#order-price').text(pizza_price);
+
+        // UNHIGHLIGHTS BUTTON WHEN NO LONGER BEING PRESSED
+        $(".btn").mouseup(function(){
+            $(this).blur();
+        });
     });
 });
