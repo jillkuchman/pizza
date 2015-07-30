@@ -4,6 +4,7 @@
         <!-- STYLES -->
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
         <link rel='stylesheet' href='css/styles.css'>
+        <link href='http://fonts.googleapis.com/css?family=Bangers|Oswald' rel='stylesheet' type='text/css'>
 
         <!-- SCRIPTS -->
         <script src='js/jquery-1.11.2.js'></script>
@@ -19,16 +20,16 @@
         <div class='container'>
             <!-- PAGE HEADER -->
             <div class='page-header'>
-                <h1>Order A Pizza</h1>
+                <h1>Order A Pizza!</h1>
             </div>
 
             <!-- ORDER SELECTIONS -->
-            <div id='pizza-order' class='row'>
+            <div class='pizza-order' class='row'>
                 <form id='order-form'>
-                    <div class='row'>
+                    <div class='row main-form'>
                         <!-- TOPPINGS -->
                         <div class='col-sm-4 form-group'>
-                            <h4 id='toppings-list'>SELECT TOPPINGS:</h4>
+                            <h2 id='toppings-list'>SELECT TOPPINGS:</h2>
                             <input type='checkbox' name='topping' class='topping-selection' value=1> Pepperoni <br>
                             <input type='checkbox' name='topping' class='topping-selection' value=1> Olives <br>
                             <input type='checkbox' name='topping' class='topping-selection' value=1> Mushrooms <br>
@@ -45,7 +46,7 @@
 
                         <!-- SIZE -->
                         <div class='col-sm-4 form-group'>
-                            <h4>SELECT SIZE: </h4>
+                            <h2>SELECT SIZE: </h2>
                             <select id='size-selection'>
                                 <option value=0>Small</option>
                                 <option value=1>Medium</option>
@@ -56,7 +57,7 @@
 
                         <!-- CRUST -->
                         <div class='col-sm-4 form-group'>
-                            <h4>SELECT CRUST:</h4>
+                            <h2>SELECT CRUST:</h2>
                             <select id='crust-selection'>
                                 <option value=0>Standard</option>
                                 <option value=0>Thin</option>
@@ -66,21 +67,21 @@
                         </div>
                     </div>
 
-                    <div class='row' id='order-btn'>
+                    <div class='row order-btn'>
                         <!-- SUBMIT -->
-                        <button type='submit' class='btn btn-info'>Order</button>
+                        <button type='submit' class="btn btn-info">Order</button>
                     </div>
                 </form>
             </div>
             <br>
             <hr>
                 <!-- PRICE -->
-                <div id='pizza-price' class='row'>
+                <div class="result" id='pizza-price' class='row'>
                     <h3>Your pizza will cost $<span id='order-price'></span>.</h3>
                     <br>
                     <!-- Button to order another pizza, will refresh the page with nothing selected  -->
                     <form action='index.html' method='post'>
-                        <button id='logout-btn' class='btn btn-warning'>Order Another Pizza</button>
+                        <button class='btn btn-warning'>Order Another Pizza</button>
                     </form>
                 </div>
         </div>

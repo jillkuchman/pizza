@@ -1,8 +1,42 @@
+body {
+	background-image: url(../img/nebula.jpg);
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 0.5;
+}
+
+.main-form {
+	padding-left: 30px;
+	padding-right: 30px; 
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h1, h2 {
+	font-family: 'Bangers', cursive;
+}
+
+.result {
+	margin-bottom: 50px;
+}
+
 #pizza-price {
     display: none;
     text-align: center;
 }
 
-#order-btn {
+.order-btn {
     text-align: center;
+}
+
+#pizza-btn {
+	background-image: url(../img/pizza-slice.png);
 }
